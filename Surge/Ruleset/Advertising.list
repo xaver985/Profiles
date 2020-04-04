@@ -159,6 +159,16 @@ DOMAIN,duclick.baidu.com
 DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
 DOMAIN,nsclick.baidu.com
+# > Bilibili
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square))
+URL-REGEX,https://api.bilibili.com/x/v2/dm/advert
+URL-REGEX,https://app.bilibili.com/x/v2/param
+URL-REGEX,https://app.bilibili.com/x/resource/abtest
+URL-REGEX,http://app.bilibili.com/x/v2/dataflow/report-TINYGIF
+URL-REGEX,https://app.bilibili.com/x/v2/search/(defaultword|hot|recommend|resource)
+URL-REGEX,https://app.bilibili.com/x/v2/rank.*rid=(168|5)
+URL-REGEX,https://api.bilibili.com/pgc/season/rank/cn
+AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFFIX,hdslb.com))))
 # > ByteDance
 DOMAIN,ad.toutiao.com
 # > BitAuto
@@ -173,6 +183,11 @@ DOMAIN,galaxy.bjcathay.com
 DOMAIN,mdrecv.app.cntvwb.cn
 DOMAIN,sdapprecv.app.cntvwb.cn
 DOMAIN,vdapprecv.app.cntvwb.cn
+# > Caixin
+DOMAIN,gg.caixin.com
+DOMAIN,logstat.caixin.com
+DOMAIN,apollo.caixin.com
+DOMAIN,promote.caixin.com
 # > ChinaTelecom
 DOMAIN,ad.21cn.com
 DOMAIN,ad.k.21cn.com
